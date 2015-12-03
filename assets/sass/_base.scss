@@ -1,0 +1,52 @@
+.clear:before,
+.clear:after {
+    content: "";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+}
+
+a img {
+    vertical-align: middle;
+}
+
+body {
+    background: $bkg;
+    min-width: 73.25em;
+}
+
+.container {
+    width: 71.25em;
+    margin: 0 auto;
+}
+
+.btn {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    padding: .75em 2em;
+    @include border-radius(3em);
+    @include transition(background .3s ease);
+    
+    &.btn_blue {
+        background: $blue;
+        
+        &:hover {
+            background: darken($blue, 5%);
+        }
+    }
+    
+    &.btn_red {
+        background: $red;
+        
+        &:hover {
+            background: darken($red, 5%);
+        }
+    }
+}

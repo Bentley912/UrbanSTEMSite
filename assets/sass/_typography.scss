@@ -1,0 +1,15 @@
+// Default Typography Styles
+
+body, input, textarea, button {
+	font-family: $bodyFont;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headingFont;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+	margin-top: 0;
+}

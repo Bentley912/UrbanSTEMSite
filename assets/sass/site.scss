@@ -1,0 +1,40 @@
+// Import Compass
+
+@import "compass";
+    
+    
+// Variables
+// Placing variables here allows them to be used in the import stylesheets below.
+
+// Fonts
+
+$headingFont: "Roboto Slab", serif;
+$bodyFont: "Roboto Slab", serif;
+
+
+// Colors
+
+$bkg: #343a40;
+$bkg-light: #f3f3f3;
+$text-grey: #6b737c;
+$text-grey-dark: #32383e;
+$red: #ff415b;
+$blue: #50c8ff;
+$yellow: #ffc500;
+
+// Mixins
+
+@import "mixins";
+
+
+// Embed boilerplate stylesheets
+// This imports the reset, and most form elements.
+
+@import "normalize";
+@import "base";
+@import "typography"; 
+
+
+// Site styles
+
+@import "styles";
